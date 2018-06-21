@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form 表单</title>
+</head>
+<body>
+	<fieldset>
+		<legend>注册页面</legend>
+		<form name="zhuce" action="" method="post">
+		用户名：
+			<input type="text" name="user" placeholder="用户名" /><br />
+		密&ensp;&ensp;码：
+			<input type="password" placeholder="密码" maxlength="50" /><br />
+
+		性&ensp;&ensp;别:
+			<input type="radio" name="sex" id="male" value="1" checked="checked">
+			<label for="male">男</label>
+			<input type="radio" name="sex" id="female" value="0">
+			<label for="female">女</label>
+			<input type="radio" name="sex" id="unknow" value="2">
+			<label for="unknow">未知</label><br />
+		
+		爱&ensp;&ensp;好：
+			<input type="checkbox" value="sing" id="sing" name="hobby" checked>
+			<label for="sing">唱歌</label>
+			<input type="checkbox" value="game" id="game" name="hobby">
+			<label for="game">游戏</label>
+			<input type="checkbox" value="read" id="read" name="hobby">
+			<label for="read">读书</label>
+			<input type="checkbox" value="movie" id="movie" name="hobby">
+			<label for="movie">看电影</label>
+			<br />
+			<input type="hidden" name="id" value="01">
+		上传头像：
+			<input type="file" name="photo" multiple enctype="multipart/foem-data"><br />
+		所在城市：
+			<select name="city" size="3" multiple>
+				<option value="0">请选择</option>
+				<option value="beijing">北京</option>
+				<option value="shanghai">上海</option>
+				<option value="guangzhou" selected>广州</option>
+				<option value="shenzhen">深圳</option>
+			</select>
+			<select name="city">
+				<option value="0">请选择</option>
+				<optgroup label="北方">
+					<option value="beijing">北京</option>
+					<option value="tianjin">天津</option>
+				</optgroup>
+				<optgroup label="南方">
+					<option value="shanghai">上海</option>
+					<option value="guangzhou" selected>广州</	option>
+					<option value="shenzhen">深圳</option>
+				</optgroup>
+			</select><br />
+		个人简介：
+			<textarea name="content" id="con" cols="30" rows="4" style="resize:none"></textarea><br />
+			<input type="button" onclick="alert('Hello world！')；" name="btn" value="确定" />
+			<input type="submit" name="commit" value="提交" />
+			<input type="reset" name="reset" value="重置" />
+			<!-- 图片按钮 -->
+			<input type="image" name="img-bth" src="img1/01jpg">
+		</form>
+	</fieldset>
+</body>
+</html>
